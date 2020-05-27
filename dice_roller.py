@@ -9,6 +9,10 @@ def main():
   for i in range(dice_rolls):
     roll = randint(1,6)
     print(f'As {ordinals[i]}, you rolled a {roll}')
+    if roll==6:
+      print('Critical success!')
+    elif roll==1:
+      print('Critical fail!')
     dice_sum+=roll
   print(f'You have rolled a total of {dice_sum}')
 
